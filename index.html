@@ -1,0 +1,72 @@
+<!DOCtype HTML>
+<html>
+
+<head>
+  <title>Color Mixer</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <h1>Color Mixer</h1>
+
+  <div class="container">
+    <div class="color-box">
+      <div class="box red">
+        <span>Red</span>
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="red" 
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box green">
+        <span>Green</span>
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="green"  
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box blue">
+        <span>Blue</span>
+        <span class="value">100</span>
+      </div>
+      <input type="range" 
+             id="blue" 
+             value="100" 
+             min="0" 
+             max="255" 
+             step="1" />
+    </div>
+    <div class="color-box">
+      <div class="box alpha">
+        <span>Alpha</span>
+        <span class="value">1</span>
+      </div>
+      <input type="range" 
+             id="alpha" 
+             value="1" 
+             min="0" 
+             max="1" 
+             step="0.1" />
+    </div>
+  </div>
+  <div class="container mixed">
+    <div class="color-box mixed">
+      <div class="box mixed">
+        <span>Result</span>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
