@@ -26,7 +26,6 @@
     ranges[r] ? ranges[r].addEventListener('input', handleRangeInputChange) : null;
   });
 
-
   // HELPERS \\
   function getDivElement(color) {
     return document.getElementsByClassName(color)[0] || null;
@@ -45,13 +44,13 @@
     setValueInView(id,value);
   }
 
+  // Set style of the boxes
   function setCSSVariable(colorId, value) {
     document.documentElement.style.setProperty(`--${colorId}`, +value);
   }
 
+  // Set value in the view
   function setValueInView(colorId, value) {
     boxDivs[colorId].getElementsByClassName('value')[0].innerText = value;
   }
-  // Event handler will set the CSS variables
-  // Set style of the boxes
 })()

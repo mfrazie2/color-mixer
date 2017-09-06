@@ -15,17 +15,23 @@ h1 {
 span {
   background-color: rgba(255,255,255,0.5);
   display: flex;
-  width: 100%;
-  justify-content: center;}
+  width: var(--oneHundred);
+  justify-content: center;
+}
 .container {
   display: flex;
   justify-content: space-between;
 }
 .container.mixed {
-  width: 100%;
+  width: var(--oneHundred);
+  margin-top: 10px;
 }
 .color-box {
   width: var(--width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .box {
   display: flex;
@@ -33,7 +39,7 @@ span {
   align-items: flex-start;
   justify-content: space-between;
   height: var(--height);
-  width: var(--oneHundred);
+  width: calc(var(--oneHundred) - 5px);
   border: 1px solid black;
 }
 .red {
@@ -56,6 +62,6 @@ span {
   width: var(--oneHundred);
 }
 input[type="range"] {
-  width: var(--oneHundred);
+  width: calc(var(--oneHundred) - 5px);
   cursor: ew-resize;
 }
