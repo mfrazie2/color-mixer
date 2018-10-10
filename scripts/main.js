@@ -51,6 +51,6 @@
 
   // Set value in the view
   function setValueInView(colorId, value) {
-    boxDivs[colorId].getElementsByClassName('value')[0].innerText = value;
+    boxDivs[colorId].parentNode.getElementsByClassName('value')[0].innerText = value;
   }
 })()
